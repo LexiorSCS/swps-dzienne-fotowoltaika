@@ -12,7 +12,6 @@ string GetCorrectSign(string playerName)
     return sign;
 }
 
-
 const StringComparison stringComparison = StringComparison.OrdinalIgnoreCase;
 
 Console.WriteLine("Let's play Rock-Paper-Scissors!");
