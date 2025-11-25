@@ -12,6 +12,13 @@ string GetCorrectSign(string playerName)
     return sign;
 }
 
+string GetCorrectRandomSign(string playerName)
+{
+    int signIndex = Random.Shared.Next(allowedSigns);
+    string sign = allowedSigns[signIndex];
+    Console.WriteLine($"{playerName} chose {sign}");
+}
+
 const StringComparison stringComparison = StringComparison.OrdinalIgnoreCase;
 
 Console.WriteLine("Let's play Rock-Paper-Scissors!");
